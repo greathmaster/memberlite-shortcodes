@@ -52,38 +52,38 @@ function memberlitesc_signup_shortcode($atts, $content=null, $code="")
 				{
 					?>
 					<div>
-						<label for="username">Username</label>
+						<label for="username"><?php _e("Username", "memberlite-shortcodes");?></label>
 						<input id="username" name="username" type="text" class="input" size="30" value="" /> 
 					</div>
 					<?php do_action("pmpro_checkout_after_username");?>
 					<div>
-						<label for="password">Password</label>
+						<label for="password"><?php _e("Password", "memberlite-shortcodes");?></label>
 						<input id="password" name="password" type="password" class="input" size="30" value="" /> 
 					</div>
 					<?php if($short) { ?>
 						<input type="hidden" name="password2_copy" value="1" />
 					<?php } else { ?>
 						<div>
-							<label for="password2">Confirm Password</label>
+							<label for="password2"><?php _e("Confirm Password", "memberlite-shortcodes");?></label>
 							<input id="password2" name="password2" type="password" class="input" size="30" value="" /> 
 						</div>			
 					<?php } ?>
 					<?php do_action("pmpro_checkout_after_password");?>
 					<div>
-						<label for="bemail">E-mail Address</label>
+						<label for="bemail"><?php _e("E-mail Address", "memberlite-shortcodes");?></label>
 						<input id="bemail" name="bemail" type="email" class="input" size="30" value="" /> 
 					</div>
 					<?php if($short) { ?>
 						<input type="hidden" name="bconfirmemail_copy" value="1" />
 					<?php } else { ?>
 						<div>
-							<label for="bconfirmemail">Confirm E-mail</label>
+							<label for="bconfirmemail"><?php _e("Confirm E-mail", "memberlite-shortcodes");?></label>
 							<input id="bconfirmemail" name="bconfirmemail" type="email" class="input" size="30" value="" /> 
 						</div>	         
 					<?php } ?>
 					<?php do_action("pmpro_checkout_after_email");?>
 					<div class="pmpro_hidden">
-						<label for="fullname">Full Name</label>
+						<label for="fullname"><?php _e("Full Name", "memberlite-shortcodes");?></label>
 						<input id="fullname" name="fullname" type="text" class="input" size="30" value="" /> <strong>LEAVE THIS BLANK</strong>
 					</div>
 					
